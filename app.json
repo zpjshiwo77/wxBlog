@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/food/food",
+    "pages/food_detail/food_detail",
+    "pages/comesoon/comesoon"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "吃货",
+    "navigationBarTextStyle":"#fff"
+  }
+}
