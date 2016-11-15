@@ -1,3 +1,5 @@
+var imath = require('math.js'); //获取数学函数的实例
+
 const nav = {
     color:"#fff",
     navCont:[{
@@ -15,7 +17,7 @@ const nav = {
     },{
         name:"音乐",
         border:"none",
-        url:"../comesoon/comesoon"
+        url:"../music/music"
     },{
         name:"吃货",
         border:"none",
@@ -29,13 +31,7 @@ const nav = {
 
 module.exports = {
    NavF() {
-	const arr = {};
-    arr.color = nav.color;
-    arr.navCont = [];
-
-	for(var i = 0; i < nav.navCont.length; i++){
-		arr.navCont.push(nav.navCont[i]);
-	}
+    var arr = imath.imath.deepClone(nav);
     return arr;
   }
 }
