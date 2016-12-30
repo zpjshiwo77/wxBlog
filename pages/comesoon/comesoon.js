@@ -1,8 +1,8 @@
-// Page({
-//   data: {
+Page({
+  data: {
     
-//   },
-//   onLoad: function (options) {
+  },
+  onLoad: function (options) {
     
-//   }
-// })
+  }
+})

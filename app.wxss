@@ -5,9 +5,9 @@ text{
 .nav {
     position: fixed;
     z-index: 999;
-    width: 752rpx;
-    height: 180rpx;
-    bottom: 0rpx;
+    width: 754rpx;
+    height: 182rpx;
+    bottom: -1rpx;
     left: -1rpx;
     padding: 10rpx 25rpx 0;
     box-sizing:border-box;

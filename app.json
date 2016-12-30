@@ -1,14 +1,14 @@
 {
   "pages":[
+    "pages/music/music",
     "pages/food/food",
     "pages/food_detail/food_detail",
-    "pages/music/music",
     "pages/comesoon/comesoon"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#000",
-    "navigationBarTitleText": "博客",
+    "navigationBarTitleText": "page的博客",
     "navigationBarTextStyle":"#fff"
   }
 }
