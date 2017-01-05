@@ -1,15 +1,14 @@
 //index.js
 var nav = require('../../utils/nav.js'); //获取导航的实例
-var songsData = require('../../utils/songs_data.js'); //获取食物的信息
+var songsId = ["406475388","418603077","424477572","28747428","30569023","404184209","411988502","408332847","187956","41665696","31545822","168277","65528","34179838","64673","188671","208938","190473","425724850","37169617","35403523","209045","409060868","113610","185982","185868","253948","30394763","63650","187966","255858","32507038","186125","4950181","188703","720231","28029104","36539010","316637","27612267","64959","35847131","31654343","167924","287035","387622","188657","30394771","25877506","30070212","28850212","26348068","286602","30953009"];//歌曲
 var count = 12;
 var musicStatus = false;
 var songs = [];
 var loadItem = 0;
-var loadFlag = 0;
+var loadFlag = 9;
 var songNow = "";
 var songNowId = "";
 var songPosition = 0;
-var fps = 0;//手指触碰屏幕的位置
 
 Page({
   data: {
@@ -25,7 +24,19 @@ Page({
   onLoad: function () {
     var that = this;
     this.Nav_Init();
-    this.renderPage(15);
+    this.loadMusic();
+    setTimeout(function(){
+      that.loadMusic();
+    },500);
+  },
+  loadMusic: function(){
+    for(var i = 0;i < 9;i++){
+      if(loadItem + i < songsId.length && loadFlag > 0){
+        loadFlag--;
+        this.loadSongs(songsId[loadItem + i]);
+      }
+    }
+    loadItem += 9;
   },
   playMusic: function(event){
     if(event.currentTarget.id != songNowId){
@@ -99,24 +110,36 @@ Page({
       nav:thisNav
     });
   },
-  recordP: function(e){
-    fps = e.changedTouches[0].clientY;
-  },
-  loadMore: function(e){
-    if(e.changedTouches[0].clientY - fps < -10){
-      if(loadFlag < songsData.songs.length){
-        var num = songsData.songs.length - loadFlag > 6 ? 6 : songsData.songs.length - loadFlag;
-        this.renderPage(num);
-      }
-    }
-  },
-  renderPage: function(num){
-    for(var i = loadFlag;i < loadFlag + num;i++){
-      songs.push(songsData.songs[i]);
-    }
-    loadFlag += num;
+  renderPage: function(data){
+    var item = {};
+    item.picUrl = data.songs[0].album.picUrl;
+    item.name = data.songs[0].name;
+    item.singer = data.songs[0].artists[0].name;
+    item.scale = "scale";
+    item.song = data.songs[0].mp3Url;
+    songs.push(item);
     this.setData({
       musics:songs
     });
+  },
+  loadSongs: function(data){
+    console.log("loadStart");
+    var that = this;
+    wx.request({
+      url: 'https://www.seventh77.com/modal/test.php',
+      method: 'POST',
+      data: 'id=' + data,
+      header: {
+          'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
+      },
+      success: function(res) {
+        console.log("success");
+        that.renderPage(res.data);
+        loadFlag++;
+      },
+      fail: function(){
+        console.log("fail");
+      }
+    })
   }
 })
