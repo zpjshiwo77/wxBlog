@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/index/index",
     "pages/music/music",
     "pages/food/food",
     "pages/food_detail/food_detail",

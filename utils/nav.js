@@ -3,9 +3,9 @@ var imath = require('math.js'); //获取数学函数的实例
 const nav = {
     color:"#fff",
     navCont:[{
-        name:"动漫",
+        name:"主页",
         border:"none",
-        url:"../comesoon/comesoon"
+        url:"../index/index"
     },{
         name:"技术博客",
         border:"none",
@@ -23,7 +23,7 @@ const nav = {
         border:"none",
         url:"../food/food"
     },{
-        name:"游戏娱乐",
+        name:"动漫",
         border:"none",
         url:"../comesoon/comesoon"
     },]

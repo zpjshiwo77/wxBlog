@@ -1,0 +1,67 @@
+<view class="introBox">
+    <image src="http://seventh77.com/view/img/Mman.png" mode="scaleToFill" class="people"></image>
+    <text class="name">柒 柒</text>
+    <text class="worda">前端工程狮</text>
+    <text class="Ename">Seventh Page</text>
+    <text class="wordb">点彩色块有惊喜哦~</text>
+</view>
+<view class="contBox" bindtouchend="moveP" bindtouchstart="recordP">
+    <view class="linebox">
+        <view class="circle" style="top:{{top}}"></view>
+        <view class="line"></view>
+    </view>
+
+    <navigator hover-class="none" style="border-color:{{nav[0].color}}" url="{{nav[0].url}}" class="anime">
+        <text class="words w1" style="background:{{nav[0].color}}">海贼</text>
+        <text class="words w2" style="color:{{nav[0].color}}">数码宝贝tri</text>
+        <text class="words w3" style="color:{{nav[0].color}}">火影</text>
+        <view style="border-color: rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0) {{nav[0].color}};" class="icona"></view>
+    </navigator>
+
+    <navigator hover-class="none" style="border-color:{{nav[1].color}}" url="{{nav[1].url}}" class="sport">
+        <text class="words w4" style="color:{{nav[1].color}}">足球</text>
+        <text class="words w5" style="background:{{nav[1].color}}">篮球</text>
+        <text class="words w6" style="color:{{nav[1].color}}">跑步</text>
+        <text class="words w7" style="color:{{nav[1].color}}">健身</text>
+        <view style="border-color: rgba(0,0,0,0) {{nav[1].color}} rgba(0,0,0,0) rgba(0,0,0,0);" class="iconb"></view>
+    </navigator>
+
+    <navigator hover-class="none" style="border-color:{{nav[2].color}}" url="{{nav[2].url}}" class="skill">
+        <text style="color:{{nav[2].color}}" class="words w8">H5</text>
+        <text style="background:{{nav[2].color}}" class="words w9">JavaScript</text>
+        <text style="color:{{nav[2].color}}" class="words w10">php</text>
+        <text style="color:{{nav[2].color}}" class="words w11">css3</text>
+        <view style="border-color: rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0) {{nav[2].color}};" class="iconc"></view>
+    </navigator>
+
+    <navigator hover-class="none" style="border-color:{{nav[3].color}}" url="{{nav[3].url}}" class="movie">
+        <text style="color:{{nav[3].color}}" class="words w12">Marvel系列电影</text>
+        <text style="color:{{nav[3].color}}" class="words w13">About Time</text>
+        <text style="color:{{nav[3].color}}" class="words w14">宫崎骏动画</text>
+        <text style="background:{{nav[3].color}}" class="words w15">无间道</text>
+        <text style="color:{{nav[3].color}}" class="words w16">路边野餐</text>
+        <view style="border-color: rgba(0,0,0,0) {{nav[3].color}} rgba(0,0,0,0) rgba(0,0,0,0);" class="icond"></view>
+    </navigator>
+
+    <navigator hover-class="none" style="border-color:{{nav[4].color}}" url="{{nav[4].url}}" class="music">
+        <text style="color:{{nav[4].color}}" class="words w17">Jay</text>
+        <text style="color:{{nav[4].color}}" class="words w18">张学友</text>
+        <text style="color:{{nav[4].color}}" class="words w19">陈奕迅</text>
+        <text style="color:{{nav[4].color}}" class="words w20">BlackPink</text>
+        <view style="border-color: rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0) {{nav[4].color}};" class="icone"></view>
+    </navigator>
+
+    <navigator hover-class="none" style="border-color:{{nav[5].color}}" url="{{nav[5].url}}" class="game">
+        <text style="color:{{nav[5].color}}" class="words w21">LOL</text>
+        <text style="background:{{nav[5].color}}" class="words w22">像素画板</text>
+        <text style="color:{{nav[5].color}}" class="words w23">The House</text>
+        <view style="border-color: rgba(0,0,0,0) {{nav[5].color}} rgba(0,0,0,0) rgba(0,0,0,0);" class="iconf"></view>
+    </navigator>
+
+    <navigator hover-class="none" style="border-color:{{nav[6].color}}" url="{{nav[6].url}}" class="food">
+        <text style="color:{{nav[6].color}}" class="words w24">碎肉藕饼</text>
+        <text style="background:{{nav[6].color}}" class="words w25">宫保鸡丁</text>
+        <text style="color:{{nav[6].color}}" class="words w26">酸汤牛肉</text>
+        <view style="border-color: rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0) {{nav[6].color}};" class="icong"></view>
+    </navigator>
+</view>

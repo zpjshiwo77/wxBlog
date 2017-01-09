@@ -95,6 +95,7 @@ Page({
     var thisNav = nav.NavF();
     thisNav.color = "rgb(130, 148, 160)";
     thisNav.navCont[3].border = "5rpx solid #333";
+    thisNav.navCont[3].url = "";
     this.setData({
       nav:thisNav
     });

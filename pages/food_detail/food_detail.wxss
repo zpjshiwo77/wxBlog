@@ -59,7 +59,9 @@ text{
 .m_title{
     font-size: 35rpx;
     color: rgb(250,250,250);
-    padding: 15px;
+    padding:0 20rpx;
+    position: relative;
+    top: 15rpx;
 }
 .s_box{
   width: 100%;

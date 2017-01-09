@@ -14,6 +14,7 @@ Page({
     var thisNav = nav.NavF();
     thisNav.color = "rgb(193, 153, 209)";
     thisNav.navCont[4].border = "5rpx solid #333";
+    thisNav.navCont[4].url = "";
     this.setData({
       nav:thisNav
     });
