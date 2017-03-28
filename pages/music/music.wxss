@@ -59,7 +59,7 @@
     width: 100%;
     height: auto;
     overflow: hidden;
-    margin-bottom: 170rpx;
+    margin-bottom: 130rpx;
     margin-top: 200rpx;
 }
 .allMBox{

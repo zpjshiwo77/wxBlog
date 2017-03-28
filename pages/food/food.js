@@ -13,10 +13,16 @@ Page({
   Nav_Init: function(){
     var thisNav = nav.NavF();
     thisNav.color = "rgb(193, 153, 209)";
-    thisNav.navCont[4].border = "5rpx solid #333";
-    thisNav.navCont[4].url = "";
+    thisNav.navCont[1].border = "5rpx solid #333";
+    thisNav.navCont[1].url = "";
     this.setData({
       nav:thisNav
     });
+  },
+  onShareAppMessage: function () {
+    return {
+      title: "美食 - Musical美食",
+      path: '/pages/food/food'
+    }
   }
 })

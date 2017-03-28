@@ -293,6 +293,87 @@ var foodData = [
             tips:"可以适量加一点香菜点翠一下~",
             img:"http://seventh77.com/view/food/img/gbjd/step_07.jpg"
         }]
+    },{
+        id:10,
+        name:"面非面-鲶鱼面",
+        Ename:"Catfish Noodles",
+        img:"http://seventh77.com/view/food/img/nym/main.png",
+        m_material:[{name:"鲶鱼",num:"一只(2斤左右)"},{name:"鲫鱼",num:"一只"},{name:"鱿鱼干",num:"若干"}],
+        n_material:[{name:"鱼露",num:"适量"},{name:"耗油",num:"适量"},{name:"姜",num:"适量"},{name:"葱，香菜",num:"适量"},{name:"柠檬",num:"一个"},{name:"薄荷",num:"适量"},{name:"蛋清",num:"两个"},{name:"淀粉",num:"适量"}],
+        step:[{
+            title:"准备材料",
+            cont:["鲶鱼剔骨打成泥，姜切片，切葱花，鲫鱼切块。","鱼露与耗油1:1调制备用。"],
+            tips:"去越南学到一招，用香茅熬的汤会有一股淡淡的清香，十分美味。也可以用柠檬和薄荷替代香茅。",
+            img:"http://seventh77.com/view/food/img/nym/step_01.jpg"
+        },{
+            title:"熬汤",
+            cont:["把鲫鱼块，姜，葱白，薄荷放入水中开始熬制。","用力挤柠檬，滴入柠檬汁。"],
+            tips:0,
+            img:"http://seventh77.com/view/food/img/nym/step_02.jpg"
+        },{
+            title:"乘熬汤的时间处理鲶鱼泥",
+            cont:["鲶鱼泥加入蛋清，淀粉，料酒揉匀。"],
+            tips:"tips：如果发现泥太松可适当加入一些面粉。",
+            img:"http://seventh77.com/view/food/img/nym/step_03.jpg"
+        },{
+            title:"制作鲶鱼面",
+            cont:["把处理好的鲶鱼泥放入裱花袋中。","在裱花袋口剪一个刚好可以放入鱿鱼丝的口子。"],
+            tips:"挤出来的面条一定要放入开水中，不然很容易断掉。",
+            img:"http://seventh77.com/view/food/img/nym/step_04.jpg"
+        },{
+            title:"煮面",
+            cont:["把面条倒入锅中，煮3-5分钟。"],
+            tips:0,
+            img:"http://seventh77.com/view/food/img/nym/step_05.jpg"
+        },{
+            title:"调汤",
+            cont:["汤熬得差不多后，用勺子去掉表面的一些杂质。","加入刚用鱼露和耗油调好的酱汁，再熬2-3分钟。"],
+            tips:0,
+            img:"http://seventh77.com/view/food/img/nym/step_06.jpg"
+        },{
+            title:"出锅",
+            cont:["面煮好后，捞出，倒入熬好的汤。","再撒上葱花，放上香菜，一碗美味的鲶鱼面就完成了~"],
+            tips:0,
+            img:"http://seventh77.com/view/food/img/nym/step_07.jpg"
+        }]
+    },{
+        id:9,
+        name:"辣子鸡",
+        Ename:"Spicy Chicken",
+        img:"http://seventh77.com/view/food/img/lzj/main.png",
+        m_material:[{name:"鸡肉",num:"半只"},{name:"魔芋豆腐",num:"半块"}],
+        n_material:[{name:"干辣椒",num:"适量"},{name:"花椒",num:"一小把"},{name:"姜",num:"半节"},{name:"蒜瓣",num:"六瓣"},{name:"八角",num:"适量"},{name:"料酒",num:"适量"},{name:"酱油",num:"适量"},{name:"盐",num:"适量"}],
+        step:[{
+            title:"腌制鸡肉",
+            cont:["鸡肉切块后，加入适量料酒，盐巴和姜片腌制20分钟。","鸡胸肉切丁，大葱、干辣椒切段，蒜、姜切末。"],
+            tips:"鸡肉炸后会变得很小块，所以可以适当切大块一点。",
+            img:"http://seventh77.com/view/food/img/lzj/step_01.jpg"
+        },{
+            title:"准备材料",
+            cont:["干辣椒切段后，滤掉辣椒籽。","魔芋豆腐切成条状。"],
+            tips:0,
+            img:"http://seventh77.com/view/food/img/lzj/step_02.jpg"
+        },{
+            title:"炒鸡肉",
+            cont:["把油倒入锅中烧热。","烧热后，把鸡肉一次性倒入锅中，开中小火翻炒。","炒至表面金黄，乘出备用。"],
+            tips:"不知道油什么时候热，可以先放入一块鸡，如果炸得滋滋响就证明热了。",
+            img:"http://seventh77.com/view/food/img/lzj/step_03.jpg"
+        },{
+            title:"炒香料",
+            cont:["依次放入花椒和姜片、蒜瓣和八角、干辣椒炒香。","这时你会闻到一股非常浓烈的香味。"],
+            tips:0,
+            img:"http://seventh77.com/view/food/img/lzj/step_04.jpg"
+        },{
+            title:"炒鸡肉",
+            cont:["接着放入刚炒好的鸡肉，大火翻炒。","加入酱油调色。"],
+            tips:0,
+            img:"http://seventh77.com/view/food/img/lzj/step_05.jpg"
+        },{
+            title:"出锅",
+            cont:["最后加入魔芋豆腐，继续大货翻炒。","炒至魔芋和鸡肉表面都附上了美味调料后出锅。"],
+            tips:"魔芋豆腐增加了不少美味。",
+            img:"http://seventh77.com/view/food/img/lzj/step_06.jpg"
+        }]
     }
 ]
 

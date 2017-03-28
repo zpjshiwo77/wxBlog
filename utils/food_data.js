@@ -1,4 +1,24 @@
 var foodData = [
+     {
+        name:"面非面-鲶鱼面",
+        Ename:"Catfish Noodles",
+        img:"http://www.seventh77.com/view/food/img/nym/step_07.jpg",
+        time:"2017-3-18",
+        description:"偶然的一次看到小当家后，决定要做这道菜。而且从越南回来，学到了那边熬汤的秘诀，用来改进了鲶鱼面......",
+        like:177,
+        margin:"0 0 0 -50rpx",
+        url:"../food_detail/food_detail?id=10"
+    },
+    {
+        name:"辣子鸡",
+        Ename:"Spicy Chicken",
+        img:"http://www.seventh77.com/view/food/img/lzj/step_06.jpg",
+        time:"2017-1-8",
+        description:"许久没有发表美食blog了~这次带来的是香辣爽口的辣子鸡，让你一次辣到爽......",
+        like:103,
+        margin:"0 0 0 -50rpx",
+        url:"../food_detail/food_detail?id=9"
+    },
     {
         name:"宫保鸡丁",
         Ename:"Kung Pao Chicken",

@@ -1,7 +1,7 @@
 {
   "pages":[
-    "pages/index/index",
     "pages/music/music",
+    "pages/index/index",
     "pages/food/food",
     "pages/food_detail/food_detail",
     "pages/comesoon/comesoon"
@@ -9,7 +9,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#000",
-    "navigationBarTitleText": "page的博客",
+    "navigationBarTitleText": "Musical美食",
     "navigationBarTextStyle":"#fff"
   }
 }

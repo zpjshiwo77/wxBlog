@@ -42,7 +42,7 @@ text{
     color: rgb(60,20,55);
 }
 .description {
-    font-size: 25rpx;
+    font-size: 20rpx;
     padding-bottom: 10rpx;
 }
 .contact {
@@ -118,7 +118,10 @@ text{
     font-size: 22rpx;
 }
 .m_description{
+    display:inline-block;
+    width:100%;
     font-size: 20rpx;
+    line-height: 1.2;
 }
 .d_s_z{
     height: 20rpx;
