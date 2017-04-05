@@ -1,8 +1,8 @@
 {
   "pages":[
+    "pages/food/food",
     "pages/music/music",
     "pages/index/index",
-    "pages/food/food",
     "pages/food_detail/food_detail",
     "pages/comesoon/comesoon"
   ],

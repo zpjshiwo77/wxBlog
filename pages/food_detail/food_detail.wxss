@@ -5,7 +5,7 @@ text{
 .scrollBox{
   width: 750rpx;
   height: auto;
-  margin-bottom: 125rpx;
+  /*margin-bottom: 125rpx;*/
 }
 .photoBox{
     height: 450rpx;

@@ -33,8 +33,8 @@ Page({
   Nav_Init: function(){
     var thisNav = nav.NavF();
     thisNav.color = "rgb(193, 153, 209)";
-    thisNav.navCont[1].border = "5rpx solid #333";
-    thisNav.navCont[1].url = "";
+    thisNav.navCont[0].border = "5rpx solid #333";
+    thisNav.navCont[0].url = "";
     this.setData({
       nav:thisNav
     });
