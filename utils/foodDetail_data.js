@@ -313,7 +313,7 @@ var foodData = [
         },{
             title:"乘熬汤的时间处理鲶鱼泥",
             cont:["鲶鱼泥加入蛋清，淀粉，料酒揉匀。"],
-            tips:"tips：如果发现泥太松可适当加入一些面粉。",
+            tips:"如果发现泥太松可适当加入一些面粉。",
             img:"http://seventh77.com/view/food/img/nym/step_03.jpg"
         },{
             title:"制作鲶鱼面",
@@ -373,6 +373,125 @@ var foodData = [
             cont:["最后加入魔芋豆腐，继续大货翻炒。","炒至魔芋和鸡肉表面都附上了美味调料后出锅。"],
             tips:"魔芋豆腐增加了不少美味。",
             img:"http://seventh77.com/view/food/img/lzj/step_06.jpg"
+        }]
+    },{
+        id:11,
+        name:"香糯菇蒸肉",
+        Ename:"Glutinous Meat & Mushroom",
+        img:"http://seventh77.com/view/food/img/gzr/main.png",
+        m_material:[{name:"香菇",num:"7个"},{name:"猪肉",num:"四两"},{name:"鸡蛋",num:"一个"},{name:"胡萝卜",num:"半节"}],
+        n_material:[{name:"盐",num:"少许"},{name:"葱",num:"少许"},{name:"小米椒",num:"少许"},{name:"淀粉",num:"适量"}],
+        step:[{
+            title:"准备食材",
+            cont:["香菇洗净去跟，肉剁成肉末。","胡萝卜切成一小块一小块，葱，小米椒切好备用。"],
+            tips:0,
+            img:"http://seventh77.com/view/food/img/gzr/step_01.jpg"
+        },{
+            title:"拌肉",
+            cont:["把肉放入一个大盆中，加入胡萝卜，淀粉，小米椒，适量的盐拌匀。"],
+            tips:0,
+            img:"http://seventh77.com/view/food/img/gzr/step_02.jpg"
+        },{
+            title:"摆盘",
+            cont:["先在盘子里面铺上香菇。","把刚拌好的肉揉成一个一个的肉圆。","把肉圆裹上糯米放在香菇上。"],
+            tips:0,
+            img:"http://seventh77.com/view/food/img/gzr/step_03.jpg"
+        },{
+            title:"蒸香菇肉圆",
+            cont:["把摆好的香菇肉圆放入蒸锅中，开大火蒸。"],
+            tips:0,
+            img:"http://seventh77.com/view/food/img/gzr/step_04.jpg"
+        },{
+            title:"出锅",
+            cont:["蒸15-20分钟以后一盘美味的香糯菇蒸肉就出锅了~"],
+            tips:0,
+            img:"http://seventh77.com/view/food/img/gzr/step_05.jpg"
+        }]
+    },{
+        id:12,
+        name:"XO酱牛肉土豆饼",
+        Ename:"XO Beef Potato Cake",
+        img:"http://seventh77.com/view/food/img/tdb/main.png",
+        m_material:[{name:"土豆",num:"一个"},{name:"牛肉",num:"200克"},{name:"鸡蛋",num:"两个"}],
+        n_material:[{name:"洋葱",num:"1/4个"},{name:"面粉",num:"适量"},{name:"红椒",num:"两根"},{name:"青椒",num:"半根"},{name:"盐",num:"少许"},{name:"酱油",num:"适量"},{name:"蒜瓣",num:"两瓣"},{name:"黄油",num:"适量"}],
+        step:[{
+            title:"准备食材",
+            cont:["土豆切条，洋葱切末，红椒、青椒、蒜瓣剁碎。","牛肉剁成肉末。"],
+            tips:0,
+            img:"http://seventh77.com/view/food/img/tdb/step_01.jpg"
+        },{
+            title:"拌面",
+            cont:["在大碗中加入面粉和鸡蛋拌匀。"],
+            tips:"如果太干可以适量加一些水。",
+            img:"http://seventh77.com/view/food/img/tdb/step_02.jpg"
+        },{
+            title:"加入调料",
+            cont:["加入牛肉沫，碎椒，洋葱拌匀。","加入适量的盐。"],
+            tips:0,
+            img:"http://seventh77.com/view/food/img/tdb/step_03.jpg"
+        },{
+            title:"煎土豆饼",
+            cont:["把土豆饼裹上牛肉面糊，放入锅中，中小火煎炸。"],
+            tips:"土豆放入锅中后，可以倒入少量牛肉面糊在上面。",
+            img:"http://seventh77.com/view/food/img/tdb/step_04.jpg"
+        },{
+            title:"出锅",
+            cont:["待土豆饼煎得金黄就可以出锅了。"],
+            tips:0,
+            img:"http://seventh77.com/view/food/img/tdb/step_05.jpg"
+        },{
+            title:"炒酱",
+            cont:["在锅放入黄油。","待黄油融掉后，放入蒜末炒香。","最后加入少许酱油，再用芡汁勾芡。"],
+            tips:"炒酱时间不能太长。",
+            img:"http://seventh77.com/view/food/img/tdb/step_06.jpg"
+        },{
+            title:"摆盘",
+            cont:["最后把炒好的酱淋在土豆饼上。","用鲜橙，洋葱，薄荷等摆盘，一盘美味的土豆饼就完成了。"],
+            tips:0,
+            img:"http://seventh77.com/view/food/img/tdb/step_07.jpg"
+        }]
+    },{
+        id:13,
+        name:"豆花烤鱼",
+        Ename:"Grilled Fish & Tofu Pudding",
+        img:"http://seventh77.com/view/food/img/dhky/main.png",
+        m_material:[{name:"黑鱼",num:"1斤半"},{name:"豆花",num:"一碗"},{name:"土豆",num:"一个"},{name:"黄瓜",num:"半节"}],
+        n_material:[{name:"豆瓣酱",num:"一大勺"},{name:"大葱",num:"若干"},{name:"姜",num:"少许"},{name:"蒜",num:"少许"},{name:"盐",num:"少许"},{name:"干辣椒",num:"适量"},{name:"料酒",num:"少量"},{name:"青椒",num:"2根"},{name:"花椒",num:"适量"},{name:"洋葱",num:"半个"},{name:"冰糖",num:"2颗"},{name:"香菜",num:"若干"}],
+        step:[{
+            title:"腌制鱼肉",
+            cont:["鱼肉洗净","鱼露与耗油1:1调制备用。","把鱼肉刨开成两瓣，加入料酒、盐和胡椒腌制。","腌制一个小时左右。"],
+            tips:"我选的是黑鱼，家乡那边用的是江团（鮰鱼）比较多，草鱼和鲢鱼也是不错的。",
+            img:"http://seventh77.com/view/food/img/dhky/step_01.jpg"
+        },{
+            title:"烤鱼",
+            cont:["腌制完成后，给铁板和鱼刷上油。","烤箱上下150度，中层烤25分钟左右。"],
+            tips:0,
+            img:"http://seventh77.com/view/food/img/dhky/step_02.jpg"
+        },{
+            title:"备菜",
+            cont:["趁着烤鱼的这段时间可以备菜。","土豆和黄瓜削皮切条，姜和洋葱切片，青椒大葱切段，大蒜拍好，香菜干辣椒洗净备用。"],
+            tips:0,
+            img:"http://seventh77.com/view/food/img/dhky/step_03.jpg"
+        },{
+            title:"炒香料",
+            cont:["热锅冷油，放入大葱、蒜瓣、姜片、花椒和干辣椒大火炒香。"],
+            tips:0,
+            img:"http://seventh77.com/view/food/img/dhky/step_04.jpg"
+        },{
+            title:"炒酱料",
+            cont:["接着加入豆瓣酱和青椒炒香。","然后倒入一碗水，并把土豆和黄瓜倒入，再加入冰糖和适量的盐煮5分钟。"],
+            tips:0,
+            img:"http://seventh77.com/view/food/img/dhky/step_05.jpg"
+        },{
+            title:"再次烤鱼",
+            cont:["鱼烤完后把煮好的酱料倒在鱼上，并加上豆花再次烤。","上火150度，下火250度，下层烤十分钟。"],
+            tips:"考好的鱼记得翻一下，鱼肉朝上，这样才入味。",
+            img:"http://seventh77.com/view/food/img/dhky/step_06.jpg"
+        },{
+            title:"出锅",
+            cont:["烤好后，加上香菜装盘，一盘美味的豆花烤鱼就完成了。"],
+            tips:"有条件的，可以继续放在烤炉上小火烤，边烤边吃，还可以加入一些小菜",
+            img:"http://seventh77.com/view/food/img/dhky/step_07.jpg"
         }]
     }
 ]

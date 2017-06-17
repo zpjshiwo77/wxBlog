@@ -1,5 +1,35 @@
 var foodData = [
-     {
+    {
+        name:"豆花烤鱼",
+        Ename:"Grilled Fish & Tofu Pudding",
+        img:"http://www.seventh77.com/view/food/img/dhky/step_07.jpg",
+        time:"2017-6-17",
+        description:"怀念在凯里和朋友一起在路边摊一起吃烤鱼，喝着啤酒的日子，所以就自己做了一份烤鱼......",
+        like:199,
+        margin:"0 0 0 -50rpx",
+        url:"../food_detail/food_detail?id=13"
+    },
+    {
+        name:"XO酱牛肉土豆饼",
+        Ename:"XO Beef Potato Cake",
+        img:"http://www.seventh77.com/view/food/img/tdb/step_07.jpg",
+        time:"2017-5-1",
+        description:"不知为什么土豆一直是我的最爱，感觉可以用土豆做出各种美食......",
+        like:178,
+        margin:"0 0 0 -40rpx",
+        url:"../food_detail/food_detail?id=12"
+    },
+    {
+        name:"香糯菇蒸肉",
+        Ename:"Glutinous Meat & Mushroom",
+        img:"http://www.seventh77.com/view/food/img/gzr/step_05.jpg",
+        time:"2017-4-4",
+        description:"作为今年的年夜饭之一的菜，肯定要拿出来给大家看看......",
+        like:123,
+        margin:"0 0 0 -56rpx",
+        url:"../food_detail/food_detail?id=11"
+    },
+    {
         name:"面非面-鲶鱼面",
         Ename:"Catfish Noodles",
         img:"http://www.seventh77.com/view/food/img/nym/step_07.jpg",
