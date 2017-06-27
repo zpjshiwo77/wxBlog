@@ -12,12 +12,12 @@
   <image class="wxQR" mode="scaleToFill" src="http://seventh77.com/view/food/img/weixin.jpg"></image>
 </view>
 
-<scroll-view scroll-y="true" class="moments">
+<scroll-view scroll-y="true" style="height: 910rpx;" class="moments" bindscrolltolower="GetFoodList" lower-threshold="100">
    <block wx:for="{{m_Cont}}" wx:key="index">
       <view class="moment">
-        <navigator url="{{item.url}}" hover-class="none">
+        <navigator url="../food_detail/food_detail?id={{item.id}}" hover-class="none">
           <view class="m_imgBox">
-            <image src="{{item.img}}" style="margin:{{item.margin}}" mode="aspectFill" class="m_img"></image>
+            <image src="{{item.img}}" mode="aspectFill" class="m_img"></image>
           </view>
           <view class="m_cont">
             <view class="m_nameBox">
@@ -27,16 +27,16 @@
             </view>
             <text class="m_description">{{item.description}}</text>
             <view class="d_s_z">
-              <view class="m_block">
+              <view class="m_block" data-id="{{item.id}}" catchtouchstart="likeThisFood">
                 <image src="../../images/food/heart.png" mode="scaleToFill" class="m_icon"></image>
                 <text class="icon_word">{{item.like}}</text>
               </view>
               <view class="m_block">
-                <image src="http://seventh77.com/img/icon/shoucang.png" mode="aspectFit" class="m_icon"></image>
+                <image src="../../images/food/star.png" mode="aspectFit" class="m_icon"></image>
                 <text class="icon_word">收藏</text>
               </view>
               <view class="m_block">
-                <image src="http://seventh77.com/img/icon/zhuanfa.png" mode="aspectFit" class="m_icon"></image>
+                <image src="../../images/food/forward.png" mode="aspectFit" class="m_icon"></image>
                 <text class="icon_word">转发</text>
               </view>
             </view>

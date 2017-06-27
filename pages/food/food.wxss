@@ -84,7 +84,7 @@ text{
     float: left;
 }
 .m_img{
-    width: 300rpx;
+    width: 200rpx;
     height: 200rpx;
 }
 .m_cont{
@@ -124,8 +124,8 @@ text{
     line-height: 1.2;
 }
 .d_s_z{
-    height: 20rpx;
-    width: 200rpx;
+    height: 40rpx;
+    width: 330rpx;
     color: #333;
     position: absolute;
     overflow: hidden;
@@ -134,17 +134,18 @@ text{
 }
 .m_block{
     float: left;
-    width: 33%;
+    width: 105rpx;
     height: 100%;
 }
 .icon_word{
-    font-size: 15rpx;
-    margin-left: 5rpx;
+    font-size: 22rpx;
+    margin-left: 10rpx;
     float: left;
 }
 .m_icon{
     float: left;
-    height: 14rpx;
-    width: 15rpx;
-    padding-top: 5rpx;
+    height: 28rpx;
+    width: 30rpx;
+    position: relative;
+    top:2rpx;
 }
