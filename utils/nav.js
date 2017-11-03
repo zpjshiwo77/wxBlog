@@ -7,9 +7,9 @@ const nav = {
         border:"none",
         url:"../food/food"
     },{
-        name:"音乐",
+        name:"埃菲尔铁塔",
         border:"none",
-        url:"../music/music"
+        url:"../eiffel/eiffel"
     }]
 };
 

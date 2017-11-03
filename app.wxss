@@ -11,7 +11,7 @@ text{
     left: -1rpx;
     padding: 10rpx 25rpx 0;
     box-sizing:border-box;
-    display: none;
+    /* display: none; */
 }
 .navCont{
     float: left;

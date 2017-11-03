@@ -1,15 +1,16 @@
 {
-  "pages":[
+  "pages": [
     "pages/food/food",
     "pages/music/music",
     "pages/index/index",
     "pages/food_detail/food_detail",
-    "pages/comesoon/comesoon"
+    "pages/comesoon/comesoon",
+    "pages/eiffel/eiffel"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#000",
     "navigationBarTitleText": "Musical美食",
-    "navigationBarTextStyle":"#fff"
+    "navigationBarTextStyle": "#fff"
   }
 }
