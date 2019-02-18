@@ -40,6 +40,10 @@ Page({
       page++;
       var list = res.data.result.foods;
       foodlist.push.apply(foodlist,list);
+
+      for (var i = 0; i < foodlist.length; i++) {
+        foodlist[i].likeFlag = false;
+      }
       that.setData({
         m_Cont:foodlist
       });
@@ -48,26 +52,29 @@ Page({
   likeThisFood: function(event){
     var that = this;
     var id =  event.currentTarget.dataset.id;   
-    if(likeFlag){
-      var data = {
-        method:"addAHite",
-        id:id
-      };
-       for(var i = 0;i < foodlist.length;i++){
-        if(foodlist[i].id == id) foodlist[i].like++;
+    var data = {
+      method:"addAHite",
+      id:id
+    };
+    for(var i = 0;i < foodlist.length;i++){
+      if(foodlist[i].id == id) {
+        if(foodlist[i].likeFlag){
+          wx.showModal({
+            title: '感谢您的支持',
+            content: '您已经点过赞了',
+          });
+        }
+        else{
+          this.requsetFunc(data,function(res){
+            likeFlag = false;
+          });
+          foodlist[i].like++;
+          that.setData({
+            m_Cont:foodlist
+          });
+          foodlist[i].likeFlag = true;
+        }
       }
-      that.setData({
-        m_Cont:foodlist
-      });
-      this.requsetFunc(data,function(res){
-        likeFlag = false;
-      });
-    }
-    else{
-      wx.showModal({
-        title: '感谢您的支持',
-        content: '您已经点过赞了',
-      });
     }
   },
   // setNowId: function(event){
@@ -96,5 +103,22 @@ Page({
         }
       });
     }
-  }
+  },
+  shareThisFood: function(){
+
+  },
+  clickCollection: function(){
+    wx.showModal({
+      title: '点击右上角“添加到我的小程序”',
+      content: '收藏能更快找到该小程序'
+    });
+  },
+  onShareAppMessage: function (event) { 
+    var id =  event.target.dataset.id; 
+    return {
+      title: 'Music美食',
+      path: '/pages/food_detail/food_detail?id='+id,
+      imageUrl: '/images/share.jpg'
+    }
+  }//用户点击右上角分享
 })

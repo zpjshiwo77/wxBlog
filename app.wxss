@@ -51,4 +51,12 @@ text{
 .purple{
     background-color: rgb(193,153,209);
 }
+button{
+    border: none!important;
+    background: none!important;
+    padding: 0!important;
+}
+button::after {
+    border: none;
+}
 /*color end*/

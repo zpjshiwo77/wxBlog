@@ -149,3 +149,11 @@ text{
     position: relative;
     top:2rpx;
 }
+.shareBtn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 130rpx;
+    height: 50rpx;
+    z-index: 2;
+}

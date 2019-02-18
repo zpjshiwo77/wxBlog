@@ -10,11 +10,30 @@ Page({
   onLoad: function (options) {
     this.Nav_Init();
     this.requestData(options.id);
+    fid = options.id;
   },
   page_Init: function(data){
+    var stepImg = [];
+    for (var i = 0; i < data.step.length; i++) {
+      stepImg.push(data.step[i].img);
+    }
     this.setData({
-      food:data
+      food:data,
+      stepImg:stepImg
     });
+  },
+  backToIndex: function(){
+    wx.redirectTo({
+      url: '../food/food'
+    });
+  },
+  previewImg: function(event){
+    var img = event.currentTarget.dataset.img;
+    var imgs = this.data.stepImg;
+    wx.previewImage({
+      current:img,
+      urls:imgs
+    })
   },
   requestData: function(id){
     var that = this;

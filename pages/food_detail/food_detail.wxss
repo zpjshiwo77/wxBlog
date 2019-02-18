@@ -164,4 +164,14 @@ text{
   color:rgb(193,153,209);
   line-height: 1.3;
 }
+.backBtn{
+  width: 100%;
+  height: 100rpx;
+  font-size: 35rpx;
+  color: #ffffff;
+  text-align: center;
+  line-height: 100rpx;
+  background-color: rgb(60,20,55);
+  letter-spacing: 10rpx;
+}
 /*step end*/

@@ -17,7 +17,7 @@
       <view class="moment">
         <navigator url="../food_detail/food_detail?id={{item.id}}" hover-class="none">
           <view class="m_imgBox">
-            <image src="{{item.img}}" mode="aspectFill" class="m_img"></image>
+            <image lazy-load="{{true}}" src="{{item.img}}" mode="aspectFill" class="m_img"></image>
           </view>
           <view class="m_cont">
             <view class="m_nameBox">
@@ -27,11 +27,11 @@
             </view>
             <text class="m_description">{{item.description}}</text>
             <view class="d_s_z">
-              <view class="m_block" data-id="{{item.id}}" catchtouchstart="likeThisFood">
+              <view class="m_block" data-id="{{item.id}}" catchtap="likeThisFood">
                 <image src="../../images/food/heart.png" mode="scaleToFill" class="m_icon"></image>
                 <text class="icon_word">{{item.like}}</text>
               </view>
-              <view class="m_block">
+              <view class="m_block" catchtap="clickCollection">
                 <image src="../../images/food/star.png" mode="aspectFit" class="m_icon"></image>
                 <text class="icon_word">收藏</text>
               </view>
@@ -39,6 +39,7 @@
                 <image src="../../images/food/forward.png" mode="aspectFit" class="m_icon"></image>
                 <text class="icon_word">转发</text>
               </view>
+              <button catchtap="shareThisFood" open-type="share" data-id="{{item.id}}" class="shareBtn"></button>
             </view>
           </view>
         </navigator>
@@ -46,4 +47,4 @@
     </block>
 </scroll-view>
 
-<template is="nav" data="{{...nav}}"/>
+<!-- <template is="nav" data="{{...nav}}"/> -->

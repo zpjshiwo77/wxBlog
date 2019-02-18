@@ -45,8 +45,8 @@
             </view>
 
             <view class="stepCont {{index%2 == 0 ? 'fr' : 'fl'}}">
-                <view class="photoFrame {{index%2 == 0 ? 'fr' : 'fl'}}">
-                    <image src="{{item.img}}" class="stepPhoto" mode="scaleToFill"></image>
+                <view catchtap="previewImg" data-img="{{item.img}}" class="photoFrame {{index%2 == 0 ? 'fr' : 'fl'}}">
+                    <image lazy-load="{{true}}" src="{{item.img}}" class="stepPhoto" mode="scaleToFill"></image>
                 </view>
                 <view class="stepWordBox {{index%2 == 0 ? 'fl' : 'fr'}}">
                     <text class="stepWord">{{item.title}}</text>
@@ -56,6 +56,7 @@
             </view>
         </view>
     </block>
+    <view class="backBtn" catchtap="backToIndex">返 回</view>
 </scroll-view>
 
-<template is="nav" data="{{...nav}}"/>
+<!-- <template is="nav" data="{{...nav}}"/> -->
